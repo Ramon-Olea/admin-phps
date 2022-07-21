@@ -7,16 +7,16 @@
     <h1>Contenido principal</h1>
     
     
-  <!--   
+    
  <?php
-/* include_once './bd/conexion.php';
+include_once './bd/conexion.php';
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
 $consulta = "SELECT * FROM lab_banner";
 $resultado = $conexion->prepare($consulta);
 $resultado->execute();
-$data=$resultado->fetchAll(PDO::FETCH_ASSOC); */
+$data=$resultado->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 
@@ -47,10 +47,10 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC); */
                             foreach($data as $dat) {                                                        
                             ?>
                             <tr>
-                                <td><?php #echo $dat['id'] ?></td>
-                                <td><?php #echo $dat['img'] ?></td>
-                                <td><?php #echo $dat['link'] ?></td>
-                                <td><?php #echo $dat['lang'] ?></td>    
+                                <td><?php echo $dat['id'] ?></td>
+                                <td><?php echo $dat['img'] ?></td>
+                                <td><?php echo $dat['link'] ?></td>
+                                <td><?php echo $dat['lang'] ?></td>    
                                 <td></td>
                             </tr>
                             <?php
@@ -93,10 +93,9 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC); */
         </form>    
         </div>
     </div>
-</div>   -->
+</div>   
       
     
     
 </div>
-<!--FIN del cont principal-->
 <?php require_once "vistas/parte_inferior.php"?>

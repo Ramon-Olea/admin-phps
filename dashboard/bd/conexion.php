@@ -1,11 +1,11 @@
 <?php 
 class Conexion{	  
     public static function Conectar() {        
-        define('servidor','170.247.226.26');
+        define('servidor','localhost');
         
-        define('nombre_bd','laborato_dbmain');
-        define('usuario','laborato_admin');
-        define('password','Lab.Com2020#');   			        
+        define('nombre_bd','asdasdsad');
+        define('usuario','root');
+        define('password','root');   			        
         $opciones = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');			
         try{
             $conexion = new PDO("mysql:host=".servidor."; dbname=".nombre_bd, usuario, password, $opciones);			
